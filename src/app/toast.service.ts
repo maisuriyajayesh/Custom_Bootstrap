@@ -5,17 +5,17 @@ import { Injectable } from '@angular/core';
 })
 export class ToastService {
   showSuccess(message: string): void {
-    // Implement logic to show a success toast
-    console.log(`Success: ${message}`);
+    // Replace this with your actual logic to display a success toast
+    alert(`Success: ${message}`);
   }
 
   showError(message: string): void {
     // Implement logic to show an error toast
-    console.error(`Error: ${message}`);
+    alert(`Error: ${message}`);
   }
 
   showInfo(message: string): void {
     // Implement logic to show an info toast
-    console.log(`Info: ${message}`);
+    alert(`Info: ${message}`);
   }
 }

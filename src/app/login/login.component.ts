@@ -39,30 +39,6 @@ export class LoginComponent implements OnInit {
         this._router.navigate(['/login']);
       }
     })
-
-    // this._http.get<any>("http://localhost:3000/Signup")
-    //   .subscribe(
-    //     res => {
-
-    //       const user = res.find((a: any) => {
-    //         return a.email === this.login.value.email && a.password === this.login.value.password;
-    //       });
-    //       if (user) {
-
-    //         alert('You are successfully logged in');
-    //         this.login.reset();
-    //         this._router.navigate(['/dashboard']);
-    //       } else {
-
-    //         alert('User Not Found');
-    //         this._router.navigate(['/login']);
-    //       }
-    //     },
-    //     err => {
-    //       alert('Error occurred during login');
-    //     }
-    //   );
-
   }
 
 

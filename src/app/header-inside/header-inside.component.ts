@@ -19,14 +19,14 @@ export class HeaderInsideComponent implements OnInit {
     private router: Router,
   ) { }
   private setPageTitle(): void {
-    const defaultPageTitle = 'Page Not Found';
+    const defaultPageTitle = 'My Application';
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd),
       map(() => this.getPageTitle())
     ).subscribe((newTitle: string) => this.updatePageTitle(newTitle));
   }
   private getPageTitle(): string {
-    const defaultPageTitle = 'Page Not Found';
+    const defaultPageTitle = 'My Application';
     let child = this.activatedRoute.firstChild;
   
     if (!child) {

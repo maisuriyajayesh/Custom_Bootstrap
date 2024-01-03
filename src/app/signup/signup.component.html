@@ -28,7 +28,7 @@
                         <div class="mb-3">
                             <span>Go To Login Page <a [routerLink]="['/login']">Login</a></span>
                         </div>
-                        <button type="submit" class="btn btn-primary">Signup</button>
+                        <button type="submit" class="btn btn-primary" [disabled]="!signup.valid" >Signup</button>
                     </form>
                 </div>
             </div>
