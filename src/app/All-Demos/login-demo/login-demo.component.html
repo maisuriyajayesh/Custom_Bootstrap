@@ -1,0 +1,46 @@
+
+<div class="container-fluid">
+    <div class="row align-items-center">
+        <div class="col">
+            <h4>Login Form</h4>
+            <div class="row">
+            </div>
+        </div>
+        <div class="col">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h4></h4>
+                </div>
+                <div class="col-auto">
+                    <h5><button ngxClipboard  class="btn btn-secondary" [cbContent]="Copycode">Copy Code</button></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <div class="mt-3 w-50">
+                        <div class="mb-3">
+                            <label for="Email" class="form-label">Email Id</label>
+                            <input type="text" class="form-control" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                        <div class="mb-3">
+                            <span>Create New Account <a href="#">Signup</a></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="html-code-display">
+                {{Copycode}}
+            </div>
+        </div>
+    </div>

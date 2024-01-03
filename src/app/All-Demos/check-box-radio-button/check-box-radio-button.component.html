@@ -1,0 +1,68 @@
+<div class="container-fluid">
+    <div class="row align-items-center">
+        <div class="col">
+            <h4>Check Box & Radio Button</h4>
+            <div class="row">
+            </div>
+        </div>
+        <div class="col">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h4></h4>
+                </div>
+                <div class="col-auto">
+                    <h5>
+                        <button ngxClipboard class="btn btn-secondary me-2" [cbContent]="Copycode">Both Code Copy</button>
+                        <button ngxClipboard class="btn btn-secondary me-2" [cbContent]="CheckBox">Check Box Copy</button>
+                        <button ngxClipboard class="btn btn-secondary" [cbContent]="Radio">Radio Copy</button>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="row mt-5 ">
+                <div class="col">
+                    <h4>Check Box</h4>
+                    <div class="m-auto w-50">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Default checkbox
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Checked checkbox
+                            </label>
+                        </div>
+                    </div>
+                    <hr>
+                    <h4>Radio</h4>
+                    <div class="m-auto w-50">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Default radio
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Default checked radio
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="html-code-display">
+                {{Copycode}}
+            </div>
+        </div>
+    </div>

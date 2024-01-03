@@ -1,0 +1,13 @@
+<div *ngIf="isHeaderVisible" class="page-title mb-5">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col">
+                <h4>{{title}}</h4>
+            </div>
+            <div class="col-auto">
+                <h5 *ngIf="showBackToDashboardButton" ><button class="btn btn-secondary" [routerLink]="['/dashboard']">Back To Dashboard</button></h5>
+                <h5 *ngIf="showLogoutButton"><button class="btn btn-secondary" [routerLink]="['/login']">Log Out</button></h5>
+            </div>
+        </div>
+    </div>
+</div>
